@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "noEmit": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "downlevelIteration": true,
+    "jsx": "react",
+    "jsxFactory": "Html.createElement",
+    "jsxFragmentFactory": "Html.Fragment",
+    "plugins": [
+      {
+        "name": "@effect/language-service",
+        "diagnostics": {
+          "1002": "none"
+        }
+      },
+      { "name": "@kitajs/ts-html-plugin" }
+    ]
+  }
+}
